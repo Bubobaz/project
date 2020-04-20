@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Обратная связь</title>
+</head>
+<body>
+  <div class="container">
+<form action="./ajax/mail.php" method="POST" id="mailForm">
+  <div id="vopros1" class="vopros">
+    <p>1. Что добавляет возраст?</p>
+    <input type="radio" name="vopr1" id="vopr1" value="1">a) Чистый классический стиль<br>
+    <input type="radio" name="vopr1" id="vopr1" value="2">б) Чистый спортивный стиль<br>
+    <input type="radio" name="vopr1" id="vopr1" value="3">в) Смесь классики и спорта<br>
+  </div>
+  <br>
+  <div id="vopros2" class="vopros">
+    <p>2. Стоит ли взрослой женщине одеться полностью в романтичном стиле?</p>
+    <input type="radio" name="vopr2" id="vopr2" value="4">а) Да, особенно когда идешь на свидание<br>
+    <input type="radio" name="vopr2" id="vopr2" value="5">б) Нет, это будет выглядеть глупо. Надо добавлять долю романтики к другим стилям<br>
+    <input type="radio" name="vopr2" id="vopr2" value="6">в) Можно, если такой образ был на манекене<br>
+  </div>
+  <br>
+  <div id="vopros3" class="vopros">
+    <p>3. Как включать тренды в свой гардероб?</p>
+    <input type="radio" name="vopr3" id="vopr3" value="7">а) Разобраться с долгими и короткими трендами. Долгих трендов брать чуть побольше. Коротких - на один сезон, чтобы сделать образы острыми и интересными<br>
+    <input type="radio" name="vopr3" id="vopr3" value="8">б) Не трогать тренды - в них тяжело разобраться, подходит только молодежи, зачем позориться<br>
+    <input type="radio" name="vopr3" id="vopr3" value="9">в) Смотреть модные показы и полностью копировать понравившиеся образы с подиумов<br>
+  </div>
+  <br>
+  <br>
+  <input type="email" id="email" name="email" placeholder="Email" class="form-control"><br>
+  <input type="text" id="name" name="name" placeholder="Введите имя" class="form-control"><br>
+  <button type="button" id="sendMail" class="btn btn-success" >Отправить</button>
+ </form>
+ <div id="errorMess"></div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="js/formMail.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.vopros{
+    padding: 5px;
+    margin-top: 10px;
+    max-width:  700px;
+    max-height: 350px;
+    background:linear-gradient(45deg,#0dff92,rgb(233, 217, 79));
+    border-radius: 20px;
+}
+p{
+    font-size:18px;
+    text-align: center;
+    color:rgb(212, 38, 38);
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+input[type="radio"]:checked {
+    width: 18px;
+    height: 18px;
+}
+
+input[type="radio"]:hover{
+    cursor: pointer;
+}
+
